@@ -1,4 +1,3 @@
-
 import { Col, Container, Row } from "react-bootstrap";
 import { TrafficLight } from "@/components/TrafficLight";
 
@@ -12,7 +11,6 @@ export default function Home() {
           </Col>
         </Row>
       </Container>
-
     </div>
   );
 }
