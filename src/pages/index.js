@@ -1,6 +1,6 @@
-import { Jumbotron } from "@/components/Jumbotron";
-import { Button, Col, Container, Row } from "react-bootstrap";
 
+import { Col, Container, Row } from "react-bootstrap";
+import { TrafficLight } from "@/components/TrafficLight";
 
 export default function Home() {
   return (
@@ -8,14 +8,11 @@ export default function Home() {
       <Container>
         <Row>
           <Col>
-            <h1>My Own React Template</h1>
-            <Button variant="primary">Click Here</Button>
+            <TrafficLight />
           </Col>
         </Row>
       </Container>
-      <Container>
-        <Jumbotron />
-      </Container>
+
     </div>
   );
 }

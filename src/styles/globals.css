@@ -1,1 +1,53 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
+
+body {
+    background-color: #add8e6; /* Light blue color */
+}
+
+.traffic {
+    width: 100px; /* Increased width */
+    height: 300px; /* Increased height */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px; /* Increased padding */
+    border-radius: 20px; /* Increased border radius */
+    margin: auto; /* Center the traffic light horizontally */
+    margin-top: 150px; /* Added top margin */
+    position: relative; /* Added for vertical centering */
+    top: 50%;
+    transform: translateY(-50%); /* Center the traffic light vertically */
+}
+
+.red, .yellow, .green {
+    width: 60px; /* Increased light size */
+    height: 60px; /* Increased light size */
+    border-radius: 50%;
+}
+
+.light {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    opacity: 0.4; /* Dim the lights initially */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: box-shadow 0.3s ease; /* Smooth transition for the glow effect */
+}
+
+.light.active {
+    opacity: 1; /* Fully illuminate the active light */
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.8); /* Add a white glow */
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
